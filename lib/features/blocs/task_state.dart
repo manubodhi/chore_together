@@ -24,11 +24,3 @@ class TaskLoaded extends TaskState{
   @override
   List<Object> get props => [tasks];
 }
-
-class TaskError extends TaskState{
-  final String message;
-  const TaskError(this.message);
-
-  @override
-  List<Object> get props => [message];
-}

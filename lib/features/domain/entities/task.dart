@@ -1,7 +1,7 @@
 class Task {
   final int? id;
   final String name;
-  final int duration;
+  final String duration;
   final String author;
   final String assignee;
 

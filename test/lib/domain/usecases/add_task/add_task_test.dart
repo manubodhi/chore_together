@@ -18,7 +18,7 @@ void main() {
   final task = Task(
     id: 1,
     name: 'Test Task',
-    duration: 30,
+    duration: '30',
     author: 'Author',
     assignee: 'Assignee',
   );

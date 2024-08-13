@@ -21,7 +21,7 @@ class TaskLocalDataSource {
   }
 
   Future<Database> _initDb() async {
-    String path = join(await getDatabasesPath(), 'chore_together.db');
+    String path = join(await getDatabasesPath(), 'tasks.db');
     return await openDatabase(
       path,
       version: 1,
@@ -30,7 +30,7 @@ class TaskLocalDataSource {
       CREATE TABLE tasks(
       id INTEGER PRIMARY KEY,
       name TEXT,
-      duration INTEGER,
+      duration TEXT,
       author TEXT,
       assignee TEXT
       )

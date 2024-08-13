@@ -1,13 +1,18 @@
+import 'package:chore_together/core/error/task_error.dart';
 import 'package:chore_together/features/blocs/task_bloc.dart';
+import 'package:chore_together/features/data/data_sources/task_local_data_source.dart';
+import 'package:chore_together/features/data/repositories/task_repository_impl.dart';
+import 'package:chore_together/features/domain/usecases/get_tasks.dart';
 import 'package:chore_together/features/presentation/widgets/task_list.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
-class HomeScreen extends StatelessWidget {
-  const HomeScreen({super.key});
+class HomePage extends StatelessWidget {
+  const HomePage({super.key});
 
   @override
   Widget build(BuildContext context) {
+    context.read<TaskBloc>().add(LoadTasks());
     return Scaffold(
       appBar: AppBar(
         title: Text('House chores'),

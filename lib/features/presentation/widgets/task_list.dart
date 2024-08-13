@@ -10,6 +10,7 @@ class TaskList extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ListView.builder(
+      itemCount: tasks.length,
       itemBuilder: (context, index) {
         final task = tasks[index];
         return ListTile(

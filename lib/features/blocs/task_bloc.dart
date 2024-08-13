@@ -1,3 +1,4 @@
+import 'package:chore_together/core/error/task_error.dart';
 import 'package:chore_together/features/domain/entities/task.dart';
 import 'package:chore_together/features/domain/usecases/add_task.dart';
 import 'package:chore_together/features/domain/usecases/get_tasks.dart';

@@ -2,7 +2,7 @@ import 'package:flutter/foundation.dart';
 import '../../domain/entities/task.dart';
 
 class TaskModel extends Task {
-  TaskModel({int? id, required String name, required int duration, required String author, required String assignee})
+  TaskModel({int? id, required String name, required String duration, required String author, required String assignee})
       : super(id: id, name: name, duration: duration, author: author, assignee: assignee);
 
   factory TaskModel.fromJson(Map<String, dynamic> json) {
